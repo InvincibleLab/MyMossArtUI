@@ -1,5 +1,13 @@
-/* Custom styles for navbar */
-.navbar-brand {
-    font-weight: bold;
+.dropdown-menu {
+    display: none;
   }
-  
+
+  .nav-item:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

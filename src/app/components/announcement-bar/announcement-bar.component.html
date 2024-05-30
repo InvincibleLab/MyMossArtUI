@@ -1,0 +1,35 @@
+<div class="container-fluid">
+<div class="announcement-bar row">
+    <div class="announcements col-6 col-sm-7">
+      <div *ngFor="let announcement of announcements" class="announcement">
+        {{ announcement }}
+      </div>
+    </div>
+    <div class="currency-dropdown col-2 col-sm-1">
+      <select [(ngModel)]="selectedCurrency">
+        <option *ngFor="let currency of currencies" [ngValue]="currency">
+          <span class="flag-icon flag-icon-{{ currency.flag }}"></span> {{ currency.code }}
+        </option>
+      </select>
+    </div>
+      <div class="col-1">
+        <a class="nav-item nav-link d-flex align-items-center" href="#">
+          <i class="fas fa-shopping-cart"></i> 
+          <span class="d-none d-sm-inline-block small-text">&nbsp;Cart</span>
+        </a>
+      </div>
+      <div class="col-1">
+        <a class="nav-item nav-link d-flex align-items-center" href="#">
+          <i class="fas fa-shopping-bag"></i> 
+          <span class="d-none d-sm-inline-block small-text">&nbsp;My Orders</span>
+        </a>
+      </div>
+      <div class="col-1 col-sm-2">
+        <a class="nav-item nav-link d-flex align-items-center" href="#">
+          <i class="fas fa-user"></i> 
+          <span class="d-none d-sm-inline-block small-text">&nbsp;Log in/sign up</span>
+        </a>
+      </div>
+      
+  </div>
+</div>
