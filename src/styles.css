@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+:root {
+    /* Primary Colors */
+    --deep-red: #788972;
+    --golden-yellow: #4D2D18;
+    --soft-beige: #D4DDBC;
+
+    --soft-green: #9CA897;
+    --soft-golden: #E8C3A8;
+    --sky-blue: #D8E3DD;
+    --font-color: wheat;
+  }
+
+.brown-bg {
+    background-color: var(--golden-yellow);
+}
+
+.wheat-txt-font{
+  font-family: fantasy;
+  color: wheat;
+}
+
+.wheat-txt{
+  color: wheat;
+}
+  

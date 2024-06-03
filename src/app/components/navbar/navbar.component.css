@@ -1,3 +1,13 @@
+
+.navbar {
+  background-color: var(--golden-yellow);
+}
+
+.nav-item a {
+  font-family: fantasy;
+  color: wheat;
+}
+
 .dropdown-menu {
     display: none;
   }
