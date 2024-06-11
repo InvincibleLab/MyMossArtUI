@@ -29,6 +29,9 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Importing Pipe
+import { ChunkPipe } from './pipe/chunk.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ProductComponent,
     ProfileComponent,
-    SimilarProductsComponent
+    SimilarProductsComponent,
+    ChunkPipe
   ],
   imports: [
     BrowserModule,

@@ -1,45 +1,55 @@
-<div class="container-fluid">
-<div class="row">
+<div class="row g-0">
   <div class="col-12">
     <mdb-carousel [controls]="true" [indicators]="true">
-      <mdb-carousel-item>
-        <img
-          src="https://i.etsystatic.com/25522128/r/il/8e4473/4489490255/il_570xN.4489490255_fti4.jpg"
-          class="d-block w-100 carousel-image"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <mdb-carousel-item *ngFor="let carousel of carousels">
+      <div class="row g-0">
+        <div class="col-6" [style.backgroundColor]="carousel.bgColor">
+            <div class="text-center text-dark mt-3">
+              <h3>{{carousel.name}}</h3>
+              <p>{{carousel.description}}</p>
+            </div>
         </div>
-      </mdb-carousel-item>
-      <mdb-carousel-item>
-        <img
-          src="https://i.pinimg.com/736x/d5/23/e4/d523e4f3def3261e6b3c991700727ea0.jpg"
-          class="d-block w-100 carousel-image"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="col-6">
+            <img
+              src="{{ carousel.image }}"
+              class="d-block w-100 carousel-image"
+              alt="..."
+            />
         </div>
-      </mdb-carousel-item>
-      <mdb-carousel-item>
-        <img
-          src="https://wgme.com/resources/media/f08999ca-ed48-4be2-b933-08e4ec1bbc70-jumbo21x9_MossartfromOutsideInMaine.WGME.jpg?1626057349658"
-          class="d-block w-100 carousel-image"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
+      </div>
+
       </mdb-carousel-item>
     </mdb-carousel>
 </div>
 </div>
 
-<div class="row mt-3">
-  <app-product></app-product>
+<div class="container-fluid">
+<div class="row mt-3 g-0">
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <h4 class="text-center mb-5"><strong>Treanding Product List</strong></h4>
+  
+      <div class="row"  *ngFor="let trend of trends | chunk: 3">
+
+        <div class="col-lg-4 col-md-12 mb-4" *ngFor="let item of trend">
+          <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+            <img src="{{item.image}}"
+              class="w-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="d-flex justify-content-start align-items-start h-100">
+                  <h5><span class="badge bg-body-tertiary pt-2 ms-3 mt-3 text-dark">#{{item.rank}}</span></h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </div>
 </div>
