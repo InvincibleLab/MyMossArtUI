@@ -9,12 +9,12 @@
     <div class="row p-2" *ngFor="let product of products | chunk: 3">
       <div class="col-md-12 col-lg-4 mb-4 mb-lg-0" *ngFor="let item of product">
         <div class="card">
-          <div class="d-flex justify-content-between p-3">
-            <p class="lead mb-0">{{item.category}}</p>
+          <div class="d-flex justify-content-between">
+            <p class="lead mb-0 p-3">{{item.category}}</p>
             <div
-              class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
-              style="width: 35px; height: 35px;">
-              <p class="text-white mb-0 small">x4</p>
+              class="bg-info d-flex align-items-center justify-content-center shadow-1-strong"
+              style="width: 100px; height: 35px;" *ngIf="item.isNewArrival">
+              <p class="text-white mb-0 small">New Arrival</p>
             </div>
           </div>
           <img src="{{item.image}}"

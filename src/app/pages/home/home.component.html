@@ -3,18 +3,22 @@
     <mdb-carousel [controls]="true" [indicators]="true">
       <mdb-carousel-item *ngFor="let carousel of carousels">
       <div class="row g-0">
-        <div class="col-6 d-flex flex-column justify-content-center align-items-center p-5" [style.backgroundColor]="carousel.bgColor">
+        <div class="col-6 d-none d-sm-block d-flex" [style.backgroundColor]="carousel.bgColor" style="padding: 8rem 2rem 0rem !important;">
             <div class="text-center text-dark">
               <h3>{{carousel.name}}</h3>
               <p>{{carousel.description}}</p>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
             <img
               src="{{ carousel.image }}"
               class="d-block w-100 carousel-image"
               alt="..."
             />
+            <div class="carousel-caption text-light bg-dark bg-opacity-50 d-sm-none">
+              <h6>{{carousel.name}}</h6>
+              <!-- <p>{{carousel.description}}</p> -->
+            </div>
         </div>
       </div>
 
