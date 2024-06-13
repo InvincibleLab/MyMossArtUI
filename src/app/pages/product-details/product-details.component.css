@@ -1,20 +1,9 @@
-.container {
-    margin-top: 20px;
-  }
-  
-  img {
-    max-width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-  }
-  
-  h1 {
-    margin-top: 0;
-  }
-  
-  h2 {
-    color: #007bff;
-    margin-top: 20px;
-  }
-  
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+  color: #3b71ca !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}

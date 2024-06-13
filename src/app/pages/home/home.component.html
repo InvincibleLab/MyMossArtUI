@@ -1,3 +1,4 @@
+<ng-container *ngIf="carousels.length > 0">
 <div class="row g-0">
   <div class="col-12">
     <mdb-carousel [controls]="true" [indicators]="true">
@@ -10,11 +11,13 @@
             </div>
         </div>
         <div class="col-12 col-sm-6">
+          <a routerLink="/product/{{carousel.productId}}">
             <img
               src="{{ carousel.image }}"
               class="d-block w-100 carousel-image"
               alt="..."
             />
+          </a>
             <div class="carousel-caption text-light bg-dark bg-opacity-50 d-sm-none">
               <h6>{{carousel.name}}</h6>
               <!-- <p>{{carousel.description}}</p> -->
@@ -39,7 +42,7 @@
           <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
             <img src="{{item.image}}"
               class="w-100" />
-            <a href="#!">
+            <a routerLink="/product/{{item.productId}}">
               <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
                 <div class="d-flex justify-content-start align-items-start h-100">
                   <h5><span class="badge bg-body-tertiary pt-2 ms-3 mt-3 text-dark">#{{item.rank}}</span></h5>
@@ -57,3 +60,4 @@
   </section>
 </div>
 </div>
+</ng-container>

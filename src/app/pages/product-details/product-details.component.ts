@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ProductDetailsService } from './product-details.service';
 
 @Component({
   selector: 'app-product-details',
@@ -7,25 +8,20 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './product-details.component.css'
 })
 export class ProductDetailsComponent implements OnInit {
-  productId: string = '';
-  product: any; // Replace 'any' with your product model
+  product: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+    private productDetailsService: ProductDetailsService
+  ) {}
 
   ngOnInit(): void {
-    // Get the product ID from the route parameters
-    this.productId = this.route.snapshot.paramMap.get('id') || '';
-    this.fetchProductDetails(this.productId);
+    const id = this.route.snapshot.paramMap.get('id');
+    console.log("id ------>",id)
+    this.productDetailsService.getProductById(id).subscribe((data) => {
+      this.product = data;
+    });
   }
 
-  fetchProductDetails(id: string): void {
-    // Replace this mock data with a real API call to fetch product details
-    this.product = {
-      id: id,
-      name: 'Sample Product',
-      description: 'This is a sample product.',
-      price: 99.99,
-      imageUrl: 'assets/img/product-placeholder.png' // Replace with real image URL
-    };
-  }
+  objectKeys = Object.keys;
 }

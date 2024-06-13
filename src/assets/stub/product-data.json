@@ -7,8 +7,17 @@
     "actualprice": 59.99,
     "price": 49.99,
     "image": "assets/img/product/p1/trend.jpg",
+    "pics": [
+      "assets/img/product/p1/trend.jpg",
+      "assets/img/product/p1/trend.jpg",
+      "assets/img/product/p1/trend.jpg",
+      "assets/img/product/p1/trend.jpg",
+      "assets/img/product/p1/trend.jpg",
+      "assets/img/product/p1/trend.jpg"
+    ],
     "stock": 4,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "rank": 1
   },
   {
     "productId": "P0002",
@@ -18,7 +27,25 @@
     "actualprice": 45.99,
     "price": 40.99,
     "image": "assets/img/product/p2/trend.jpg",
-    "stock": 10
+    "pics": [
+      "assets/img/product/p2/trend.jpg",
+      "assets/img/product/p2/5.jpg",
+      "assets/img/product/p2/7.jpg",
+      "assets/img/product/p2/3.jpg",
+      "assets/img/product/p2/8.jpg"
+    ],
+    "info":{
+        "Type": "Moss Sculptures",
+        "Color": "Green",
+        "Frame": "Wooden"
+      },
+    "sizes":[
+      "18x18",
+      "24x24",
+      "32x32"
+    ],
+    "stock": 10,
+    "rank": 2
   },
   {
     "productId": "P0003",
@@ -29,7 +56,8 @@
     "price": 65.99,
     "image": "assets/img/product/p3/trend.jpg",
     "stock": 3,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "rank": 3
   },
   {
     "productId": "P0004",
@@ -39,7 +67,8 @@
     "actualprice": 40.99,
     "price": 35.99,
     "image": "assets/img/product/p4/trend.jpg",
-    "stock": 5
+    "stock": 5,
+    "rank": 4
   },
   {
     "productId": "P0005",
@@ -49,7 +78,8 @@
     "actualprice": 80.99,
     "price": 65.99,
     "image": "assets/img/product/p5/trend.jpg",
-    "stock": 9
+    "stock": 9,
+    "rank": 5
   },
   {
     "productId": "P0006",
@@ -59,7 +89,8 @@
     "actualprice": 100.99,
     "price": 95.99,
     "image": "assets/img/product/p6/trend.jpg",
-    "stock": 13
+    "stock": 13,
+    "rank": 6
   },
   {
     "productId": "P0007",
@@ -70,7 +101,8 @@
     "price": 55.99,
     "image": "assets/img/product/p7/trend.jpg",
     "stock": 1,
-    "isNewArrival": true
+    "isNewArrival": true,
+    "rank": 7
   },
   {
     "productId": "P0008",
@@ -80,6 +112,7 @@
     "actualprice": 100.99,
     "price": 95.99,
     "image": "assets/img/product/p8/trend.jpg",
-    "stock": 3
+    "stock": 3,
+    "rank": 8
   }
 ]
