@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Live Art for Your Living Space",
+        "description": "Enhance your living environment with our living moss art, bringing a dynamic and lush touch of nature to your walls. #MossMagic",
+        "image": "assets/img/home/carousel/carousel-1.jpg",
+        "bgColor": "rgb(244 244 246)",
+        "productId":"P0006"
+    },
+    {
+        "name": "Transform Your Walls with Moss Masterpieces",
+        "description": "Elevate your decor with our stunning moss masterpieces, perfect for adding a natural and artistic flair to any room.",
+        "image": "assets/img/home/carousel/carousel-2.jpg",
+        "bgColor": "rgb(208 202 203)",
+        "productId":"P0001"
+    },
+    {
+        "name": "Sustainable Beauty, One Moss at a Time",
+        "description": "Discover the sustainable beauty of moss art, handcrafted with care to create stunning pieces that are as eco-friendly as they are beautiful.",
+        "image": "assets/img/home/carousel/carousel-3.jpg",
+        "bgColor": "rgb(236 232 224)",
+        "productId":"P0003"
+    },
+    {
+        "name": "Green Artistry, Naturally Yours",
+        "description": "Embrace the charm of nature with our bespoke moss art, crafted to infuse your home with the vibrant essence of greenery.",
+        "image": "assets/img/home/carousel/carousel-4.jpg",
+        "bgColor": "rgb(214 211 208)",
+        "productId":"P0004"
+    }
+]
