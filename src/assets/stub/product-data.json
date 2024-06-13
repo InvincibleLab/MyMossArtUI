@@ -3,17 +3,25 @@
     "productId": "P0001",
     "name": "Panno Wood Slices",
     "category": "Moss Wall Art",
-    "description": "Description 1",
+    "description": "Discover the perfect blend of rustic charm and natural beauty with our Panno Wood Slices moss art. This exquisite piece features meticulously arranged wood slices adorned with vibrant, preserved moss, creating a stunning visual contrast that adds warmth and elegance to any interior.",
     "actualprice": 59.99,
     "price": 49.99,
     "image": "assets/img/product/p1/trend.jpg",
     "pics": [
-      "assets/img/product/p1/trend.jpg",
-      "assets/img/product/p1/trend.jpg",
-      "assets/img/product/p1/trend.jpg",
-      "assets/img/product/p1/trend.jpg",
-      "assets/img/product/p1/trend.jpg",
-      "assets/img/product/p1/trend.jpg"
+      "assets/img/product/p1/3a.jpg",
+      "assets/img/product/p1/4a.jpg",
+      "assets/img/product/p1/5a.jpg",
+      "assets/img/product/p1/6aa.jpg",
+      "assets/img/product/p1/11aa.jpg"
+    ],
+    "info":{
+        "Type": "Preserved Moss Art",
+        "Frame": "Wooden"
+      },
+    "sizes":[
+      "16x24",
+      "20x32",
+      "34x48"
     ],
     "stock": 4,
     "isNewArrival": true,
@@ -23,7 +31,7 @@
     "productId": "P0002",
     "name": "Bee Art Deco",
     "category": "Moss Sculptures",
-    "description": "Description 2",
+    "description": "Celebrate the harmonious beauty of nature with our Bee Art Deco moss art piece. This exquisite creation features a meticulously crafted bee design, made from premium preserved moss. The natural green hues of the moss are complemented by subtle accents of yellow and brown, capturing the essence of a bee in its purest form. Set in a sleek black wooden frame, this artwork is not only a tribute to the vital role bees play in our ecosystem but also a striking decorative piece that adds a touch of organic charm to any space.",
     "actualprice": 45.99,
     "price": 40.99,
     "image": "assets/img/product/p2/trend.jpg",
@@ -35,9 +43,11 @@
       "assets/img/product/p2/8.jpg"
     ],
     "info":{
-        "Type": "Moss Sculptures",
-        "Color": "Green",
-        "Frame": "Wooden"
+        "Type": "Wall Art",
+        "Design": "Bee Motif with Golden and Brown Accents",
+        "Frame": "Black Wooden Frame",
+        "Eco-Friendly": "Made with Sustainable and Natural Materials",
+        "Maintenance": "No Watering Required, Minimal Care"
       },
     "sizes":[
       "18x18",
@@ -51,67 +61,174 @@
     "productId": "P0003",
     "name": "Ferm Moss",
     "category": "Moss Wall Art",
-    "description": "Description 3",
+    "description": "Ferm Moss Art is a captivating blend of natural elegance and modern design. Featuring lush, preserved moss meticulously arranged in striking geometric patterns, Ferm Moss Art offers a serene and sophisticated touch to any space. The rich textures and vibrant green hues of the moss bring a sense of tranquility and nature indoors, creating a visually appealing focal point for your home or office. Each piece is handcrafted with care, ensuring that it is not only a work of art but also a testament to sustainable and eco-friendly decor. Ferm Moss Art is perfect for those who appreciate the beauty of nature and desire a unique, low-maintenance piece that enhances the ambiance of their environment.",
     "actualprice": 80.99,
     "price": 65.99,
     "image": "assets/img/product/p3/trend.jpg",
+    "pics": [
+      "assets/img/product/p3/0.jpg",
+      "assets/img/product/p3/4a.jpg",
+      "assets/img/product/p3/8a.jpg",
+      "assets/img/product/p3/11a.jpg",
+      "assets/img/product/p3/display1.jpg",
+      "assets/img/product/p3/display2.jpg"
+    ],
+    "info":{
+        "Type": "Preserved Moss Wall Art",
+        "Frame": "Sleek, black wooden frame",
+        "Ideal For": "Home and office decor"
+      },
+    "sizes":[
+      "16x24",
+      "20x32",
+      "34x48"
+    ],
     "stock": 3,
     "isNewArrival": true,
     "rank": 3
   },
   {
     "productId": "P0004",
-    "name": "Ferm Moss",
+    "name": "Kirkland Art",
     "category": "Specialty Moss Art",
-    "description": "Description 3",
+    "description": "Discover the elegance and tranquility of nature with the 'Kirkland Art Moss,' a captivating piece of living art that transforms any space into a serene oasis. Handcrafted with the finest preserved moss, this art piece captures the timeless beauty of the Pacific Northwest, bringing a touch of the outdoors inside your home or office.",
     "actualprice": 40.99,
     "price": 35.99,
     "image": "assets/img/product/p4/trend.jpg",
+    "pics": [
+      "assets/img/product/p4/30a.jpg",
+      "assets/img/product/p4/32.jpg",
+      "assets/img/product/p4/33.jpg",
+      "assets/img/product/p4/34.jpg",
+      "assets/img/product/p4/35a.jpg",
+      "assets/img/product/p4/display.jpg"
+    ],
+    "info":{
+      "Type": "Preserved moss wall art",
+      "Frame": "Available in black, white, and natural wood finishes",
+      "Dimensions": "24 x 36 (Custom sizes available)",
+      "Maintenance": "No watering or direct sunlight required",
+      "Eco-Friendly": "Made with sustainably sourced, natural materials",
+      "Customization": "Optional personalized design and color variations"
+      },
+    "sizes":[
+      "16x24",
+      "20x32",
+      "34x48"
+    ],
     "stock": 5,
     "rank": 4
   },
   {
     "productId": "P0005",
-    "name": "Ferm Moss",
+    "name": "Moss Organic Art",
     "category": "Moss Wall Art",
-    "description": "Description 3",
+    "description": "Discover the harmonious blend of nature and artistry with our 'Moss Organic Art' collection. Each piece is meticulously crafted using preserved moss and natural elements to create stunning, eco-friendly decor that brings a touch of serenity and greenery into your space. Whether you’re looking to elevate your home, office, or any environment, our moss art offers a unique and sustainable way to incorporate the calming essence of nature. Enjoy the beauty of nature without the need for maintenance, as our preserved moss retains its lush appearance and vibrancy for years.",
     "actualprice": 80.99,
     "price": 65.99,
     "image": "assets/img/product/p5/trend.jpg",
+    "pics": [
+      "assets/img/product/p5/2y.jpg",
+      "assets/img/product/p5/3b.jpg",
+      "assets/img/product/p5/6a.jpg",
+      "assets/img/product/p5/9a.jpg",
+      "assets/img/product/p5/10a.jpg",
+      "assets/img/product/p5/display.jpg"
+    ],
+    "info":{
+      "Type": "Preserved Moss Wall Art",
+      "Eco-Friendly": "Made with sustainably sourced, natural materials",
+      "Customization": "Optional personalized design and color variations"
+      },
+    "sizes":[
+      "16x24",
+      "20x32",
+      "34x48"
+    ],
     "stock": 9,
     "rank": 5
   },
   {
     "productId": "P0006",
-    "name": "Ferm Moss",
+    "name": "Orchestra Moss",
     "category": "Interactive Moss Art",
-    "description": "Description 3",
+    "description": "Orchestra Moss is a symphony of natural beauty, meticulously crafted to bring the serene essence of nature into your living space. This stunning moss art piece is designed to captivate the senses with its intricate arrangement of lush, preserved moss varieties that dance harmoniously within a sleek, modern frame. Each element is carefully selected and arranged to create a dynamic and textured artwork that exudes tranquility and elegance.",
     "actualprice": 100.99,
     "price": 95.99,
     "image": "assets/img/product/p6/trend.jpg",
+    "pics": [
+      "assets/img/product/p6/1n.jpg",
+      "assets/img/product/p6/3b.jpg",
+      "assets/img/product/p6/4.jpg",
+      "assets/img/home/carousel/carousel-1.jpg"
+    ],
+    "info":{
+      "Type": "Preserved Moss Wall Art",
+      "Frame": "Sleek, black wooden frame",
+      "Ideal For": "Home and office decor"
+      },
+    "sizes":[
+      "16x24",
+      "20x32",
+      "34x48"
+    ],
     "stock": 13,
     "rank": 6
   },
   {
     "productId": "P0007",
-    "name": "Ferm Moss",
+    "name": "Round Slice Art",
     "category": "Moss Art Gifts",
-    "description": "Description 3",
+    "description": "Experience the enchanting simplicity of nature with our Round Slice Art moss piece. This stunning circular design features a rich tapestry of preserved mosses meticulously arranged on a round wood slice. Perfect for adding a touch of organic beauty to any wall, it brings a sense of calm and natural elegance to your home or office decor. Each piece is unique, showcasing the diverse textures and colors of moss, making it a delightful addition to any space looking for a splash of greenery.",
     "actualprice": 60.99,
     "price": 55.99,
     "image": "assets/img/product/p7/trend.jpg",
+    "pics": [
+      "assets/img/product/p7/1.jpg",
+      "assets/img/product/p7/2.jpg",
+      "assets/img/product/p7/7.jpg",
+      "assets/img/product/p7/display.jpg"
+    ],
+    "info":{
+      "Type": "Preserved Moss Wall Art",
+      "Frame": "Sleek, black wooden frame",
+      "Ideal For": "Home and office decor"
+      },
+    "sizes":[
+      "18x18",
+      "24x24",
+      "32x32"
+    ],
     "stock": 1,
     "isNewArrival": true,
     "rank": 7
   },
   {
     "productId": "P0008",
-    "name": "Ferm Moss",
+    "name": "3 Panel Art Work",
     "category": "Moss Garden Art",
-    "description": "Description 3",
+    "description": "Experience the tranquil beauty of nature in your home with our '3 Panel Art Work' moss art set. This striking three-panel piece is handcrafted from premium preserved moss, showcasing a seamless blend of texture and color that brings a touch of the outdoors inside. Each panel features a unique design, yet they come together to form a cohesive and captivating artwork that transforms any space into a serene oasis. The natural variations in the moss create a dynamic visual effect that changes with the light, adding depth and interest to your decor. Perfect for living rooms, offices, or any space in need of a refreshing, green aesthetic.",
     "actualprice": 100.99,
     "price": 95.99,
     "image": "assets/img/product/p8/trend.jpg",
+    "pics": [
+      "assets/img/product/p8/00ab.jpg",
+      "assets/img/product/p8/2.jpg",
+      "assets/img/product/p8/3.jpg",
+      "assets/img/product/p8/5.jpg",
+      "assets/img/product/p8/7.jpg",
+      "assets/img/product/p8/display.jpg"
+    ],
+    "info":{
+        "Type": "Moss Sculptures",
+        "Color": "Green",
+        "Frame": "Wooden"
+      },
+    "sizes":[
+      "18x18",
+      "24x24",
+      "32x32"
+    ],
     "stock": 3,
     "rank": 8
   }
