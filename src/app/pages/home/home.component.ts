@@ -10,13 +10,10 @@ export class HomeComponent implements OnInit{
 
   carousels: any[] = []; 
 
-  trends: any[] = []; 
-
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.fetchCarouselData();
-    this.fetchProductData();
   }
   
   fetchCarouselData(): void {
@@ -26,17 +23,6 @@ export class HomeComponent implements OnInit{
       },
       (error) => {
         console.error('Error fetching carousel data:', error);
-      }
-    );
-  }
-
-  fetchProductData(): void {
-    this.http.get<any[]>('assets/stub/product-data.json').subscribe(
-      (data) => {
-        this.trends = data.slice(0,-2);
-      },
-      (error) => {
-        console.error('Error fetching product data:', error);
       }
     );
   }
