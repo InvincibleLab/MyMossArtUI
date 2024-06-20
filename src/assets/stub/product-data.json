@@ -181,11 +181,13 @@
     "productId": "P0007",
     "name": "Round Slice Art",
     "category": "Moss Art Gifts",
-    "description": "Experience the enchanting simplicity of nature with our Round Slice Art moss piece. This stunning circular design features a rich tapestry of preserved mosses meticulously arranged on a round wood slice. Perfect for adding a touch of organic beauty to any wall, it brings a sense of calm and natural elegance to your home or office decor. Each piece is unique, showcasing the diverse textures and colors of moss, making it a delightful addition to any space looking for a splash of greenery.",
+    "description": "Upgrade our home or office settings with these exquisite pieces of lifelike art. Handmade This handmade collection made for real, preserved moss combined with natural wood and a faux moss bendable vine wire. Round frame D 24\" Deep 1\" Buy it, hang it, and enjoy! If you need a different frame size, let me know!",
+    "specification":"Beautiful moss does not require watering, pruning or regular feeding, but you need to know about some of the care features. It is recommended to maintain an optimal humidity level in the room; the air should not be dried out. Recommended indicators are 40-50%. Severe drought has a negative impact on the elasticity of the material. It is important to protect this decor from direct sunlight, especially in the summer. The rays can cause pigmentation on delicate vegetation.",
     "actualprice": 189,
     "price": 165,
     "image": "assets/img/product/p7/trend.jpg",
     "pics": [
+      "assets/img/product/p7/trend.jpg",
       "assets/img/product/p7/1.jpg",
       "assets/img/product/p7/2.jpg",
       "assets/img/product/p7/7.jpg",
@@ -194,7 +196,7 @@
     "info":{
       "Type": "Preserved Moss Wall Art",
       "Frame": "Sleek, black wooden frame",
-      "Ideal For": "Home and office decor"
+      "Color": "Chartreuse"
       },
     "sizes":[
       "18x18",
@@ -209,11 +211,13 @@
     "productId": "P0008",
     "name": "3 Panel Art Work",
     "category": "Moss Garden Art",
-    "description": "Experience the tranquil beauty of nature in your home with our '3 Panel Art Work' moss art set. This striking three-panel piece is handcrafted from premium preserved moss, showcasing a seamless blend of texture and color that brings a touch of the outdoors inside. Each panel features a unique design, yet they come together to form a cohesive and captivating artwork that transforms any space into a serene oasis. The natural variations in the moss create a dynamic visual effect that changes with the light, adding depth and interest to your decor. Perfect for living rooms, offices, or any space in need of a refreshing, green aesthetic.",
-    "actualprice": 139,
-    "price": 119,
+    "description": "Upgrade our home or office settings with these exquisite pieces of lifelike art. This handmade collection made for real, preserved moss combined with Driftwood Filler Natural and a faux succulents. Set of 3 650$.",
+    "specification":"Beautiful moss does not require watering, pruning or regular feeding, but you need to know about some of the care features. It is recommended to maintain an optimal humidity level in the room; the air should not be dried out. Recommended indicators are 50-60%. Severe drought has a negative impact on the elasticity of the material. It is important to protect this decor from direct sunlight, especially in the summer. The rays can cause pigmentation on delicate vegetation.",
+    "actualprice": 350,
+    "price": 230,
     "image": "assets/img/product/p8/trend.jpg",
     "pics": [
+      "assets/img/product/p8/trend.jpg",
       "assets/img/product/p8/00ab.jpg",
       "assets/img/product/p8/2.jpg",
       "assets/img/product/p8/3.jpg",
@@ -223,13 +227,11 @@
     ],
     "info":{
         "Type": "Moss Sculptures",
-        "Color": "Green",
+        "Color": "Gray-Brown",
         "Frame": "Wooden"
       },
     "sizes":[
-      "18x18",
-      "24x24",
-      "32x32"
+      "21.5\" x 17.5\" Deep 2"
     ],
     "stock": 3,
     "rank": 8
