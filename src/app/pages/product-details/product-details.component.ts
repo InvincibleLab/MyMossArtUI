@@ -9,6 +9,8 @@ import { ProductDetailsService } from './product-details.service';
 })
 export class ProductDetailsComponent implements OnInit {
   product: any;
+  curProdPicPath = '';
+
 
   constructor(
     private route: ActivatedRoute,
@@ -17,10 +19,14 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    console.log("id ------>",id)
     this.productDetailsService.getProductById(id).subscribe((data) => {
       this.product = data;
+      this.curProdPicPath = data.image;
     });
+  }
+
+  changeImage(newPath: string): void {
+    this.curProdPicPath = newPath;
   }
 
   objectKeys = Object.keys;

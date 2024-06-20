@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 mt-5 mb-5">
+            <img src="/assets/img/logo/about.png" class="d-block w-100 carousel-image" alt="About Image">
+        </div>
+        <div class="col-md-8 offset-md-1 mt-5 mb-5">
+            <h5>About Us</h5>
+            <p>Welcome to MyMossArt, where nature meets creativity! At MyMossArt, we are passionate about bringing the tranquility and beauty of nature into your home and workspace through our unique and sustainable moss art creations. Our mission is to provide stunning, low-maintenance, and eco-friendly decor that enhances your environment and well-being.</p>
+            <h5 class="mb-2">Our Story</h5>
+            <p>Founded by a team of nature enthusiasts and skilled artisans, Moss Art was born out of a love for the natural world and a desire to share its calming influence. We believe that nature has the power to transform spaces and uplift spirits. With this vision, we have crafted a collection of exquisite moss art pieces that blend seamlessly with any interior design, adding a touch of greenery and serenity.</p>
+            <button class="btn btn-primary" (click)="toggleExpand()">
+                {{ expanded ? 'Read Less' : 'Read More' }}
+            </button>
+        </div>
+    </div>
+    <div class="row" [@expandCollapse]="expanded ? 'expanded' : 'collapsed'">
+        <div class="col-md-3 mb-4">
+            <h5>What We Offer 🤝</h5>
+            <p>Our diverse range of products includes moss wall art, framed moss pieces, custom installations, and more. Each piece is meticulously handcrafted using preserved moss, ensuring long-lasting beauty without the need for sunlight or water. Whether you're looking to create a statement piece for your living room, a calming atmosphere for your office, or a personalized gift for a loved one, MyMossArt has something for everyone.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <h5>Sustainability 💚</h5>
+            <p>At Moss Art, we are committed to sustainability and environmental responsibility. Our moss is sustainably harvested and preserved using eco-friendly methods. We prioritize the use of natural and recyclable materials in our products and packaging, ensuring that our creations not only beautify your space but also contribute to a healthier planet.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <h5>Our Team 🚀</h5>
+            <p>Our team consists of talented artists, designers, and nature lovers dedicated to creating unique and inspiring moss art. With a keen eye for detail and a passion for innovation, we continuously explore new techniques and designs to bring you the best in moss art decor. We take pride in our craftsmanship and strive to exceed your expectations with every piece.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <h5>Join Our Community 💬</h5>
+            <p>We invite you to join the MyMossArt community and experience the transformative power of nature-inspired decor. Follow us on social media to stay updated on our latest creations, design tips, and exclusive offers. Share your moss art moments with us using #MyMossArt, and be part of a community that celebrates the beauty of nature in every space. Thank you for choosing MyMossArt. Together, let's create spaces that inspire, relax, and connect us to the wonders of nature.</p>
+        </div>
+    </div>
+</div>

@@ -5,6 +5,7 @@ import { ProductComponent } from './pages/product/product.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AboutComponent } from './pages/about/about.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'gallery', component: GalleryComponent },
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({

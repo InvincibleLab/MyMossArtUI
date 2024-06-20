@@ -4,17 +4,15 @@
     <div class="row">
       <aside class="col-lg-6">
         <div class="border rounded-4 mb-3 d-flex justify-content-center">
-          <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image" href="{{product.image}}">
-            <img style="max-width: 100%; max-height: 100vh; margin: auto;" class="rounded-4 fit" src="{{product.image}}" />
-          </a>
+          <div class="main-image-wrapper">
+            <img [src]="curProdPicPath" alt="Main Image" class="main-image">
+          </div>
         </div>
         <div class="d-flex justify-content-center mb-3">
-          <a *ngFor="let pic of product.pics" data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="{{pic}}" class="item-thumb">
-            <img width="60" height="60" class="rounded-2 me-2" src="{{pic}}" />
+          <a *ngFor="let pic of product.pics" data-fslightbox="mygalley" class="border mx-1 rounded-2" data-type="image" class="item-thumb">
+            <img width="60" height="60" class="thumbnail rounded-2 me-2" [src]="pic" (click)="changeImage(pic)"/>
           </a>
         </div>
-        <!-- thumbs-wrap.// -->
-        <!-- gallery-wrap .end// -->
       </aside>
       <main class="col-lg-6">
         <div class="ps-lg-3">
@@ -49,6 +47,10 @@
             <dt class="col-3">{{ item }}:</dt>
             <dd class="col-9">{{ product.info[item] }}</dd>
           </div>
+
+          <p class="mt-1">
+            <b>IMPORTANT CARE INSTRUCTIONS:</b> {{product.specification}}
+          </p>
 
           <hr />
 

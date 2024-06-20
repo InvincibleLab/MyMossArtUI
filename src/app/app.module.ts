@@ -16,6 +16,7 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AboutComponent } from './pages/about/about.component';
 import { SimilarProductsComponent } from './components/similar-products/similar-products.component';
 
 // Importing Mdb components
@@ -51,6 +52,7 @@ import { ChunkPipe } from './pipe/chunk.pipe';
     ProfileComponent,
     ContactComponent,
     GalleryComponent,
+    AboutComponent,
     SimilarProductsComponent,
     ChunkPipe
   ],

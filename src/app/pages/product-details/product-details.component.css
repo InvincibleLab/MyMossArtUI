@@ -7,3 +7,31 @@
 .icon-hover:hover i {
   color: #3b71ca !important;
 }
+
+.main-image-wrapper {
+  position: relative;
+  width: 100%; /* Full width of the parent */
+  padding-top: 56.25%; /* 16:9 aspect ratio, can adjust to your need */
+  overflow: hidden;
+  background-color: var(--soft-beige); /* Background color to visualize space */
+}
+
+.main-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure full image is displayed */
+  object-position: center; /* Center the image within its container */
+}
+
+.thumbnail {
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+  border-color: #333;
+}
