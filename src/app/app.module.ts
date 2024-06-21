@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule } from '@angular/forms';  
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 // Importing components
@@ -61,6 +62,7 @@ import { ChunkPipe } from './pipe/chunk.pipe';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     MdbAccordionModule,
     MdbCarouselModule,
     MdbCheckboxModule,

@@ -8,13 +8,23 @@
           </a>
       </div>
             <!-- Search bar -->
-    <div class="col-6 offset-sm-1 col-sm-4">
+    <div class="col-6 offset-sm-1 col-sm-4 position-relative">
         <form class="form-inline mx-auto d-flex">
-            <input class="form-control mr-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-2 bg-light" type="search" class="form-control" placeholder="Search" [formControl]="searchControl" (input)="onSearch()" aria-label="Search">
             <button class="btn" type="submit">
               <i class="fas fa-search wheat-txt"></i>
             </button>
           </form>
+          <!-- Suggestion Dropdown -->
+      <ul *ngIf="filteredProducts.length" class="list-group position-absolute mt-1 w-100 z-index-100">
+        <li 
+          *ngFor="let product of filteredProducts" 
+          class="list-group-item list-group-item-action"
+          (click)="selectSuggestion(product.name)"
+        >
+          {{ product.name }}
+        </li>
+      </ul>
     </div>
 
       <!-- Navbar toggler -->
