@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 interface Product {
-  id: number;
+  productId: number;
   name: string;
   description: string;
 }
@@ -16,12 +17,13 @@ interface Product {
 })
 export class NavbarComponent {
 
+  searchQuery: string = '';
   searchControl = new FormControl('');
   products: Product[] = [];
   filteredProducts: Product[] = [];
   showSuggestions = true; // Flag to show/hide suggestions
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
     this.loadProducts();
@@ -66,6 +68,20 @@ export class NavbarComponent {
     this.searchControl.setValue(suggestion);
     this.filteredProducts = [];
     this.showSuggestions = false; // Hide suggestions after selecting one
+  }
+
+  searchProduct() {
+    const searchedProductId = this.getProductIdByName(this.searchQuery);
+    if (searchedProductId) {
+      this.router.navigate(['product/', searchedProductId]);
+    } else {
+      alert('Product not found!');
+    }
+  }
+
+  getProductIdByName(name: string): number | undefined {
+    const product = this.products.find(product => product.name.toLowerCase() === name.toLowerCase());
+    return product ? product.productId : undefined;
   }
 
   collapseNavbar(): void {

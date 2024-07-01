@@ -10,8 +10,8 @@
             <!-- Search bar -->
     <div class="col-6 offset-sm-1 col-sm-4 position-relative">
         <form class="form-inline mx-auto d-flex">
-            <input class="form-control mr-2 bg-light" type="search" class="form-control" placeholder="Search" [formControl]="searchControl" (input)="onSearch()" aria-label="Search">
-            <button class="btn" type="submit">
+            <input class="form-control mr-2 bg-light" type="search" class="form-control" placeholder="Search" [formControl]="searchControl" (input)="onSearch()" [(ngModel)]="searchQuery" aria-label="Search">
+            <button class="btn" (click)="searchProduct()">
               <i class="fas fa-search wheat-txt"></i>
             </button>
           </form>

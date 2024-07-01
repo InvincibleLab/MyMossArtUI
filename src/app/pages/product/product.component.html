@@ -11,7 +11,7 @@
         <a routerLink="/product/{{item.productId}}">
         <div class="card">
           <div class="d-flex justify-content-between">
-            <p class="lead mb-0 p-3">{{item.category}}</p>
+            <p class="mb-0 p-3">{{item.category}}</p>
             <div
               class="bg-info d-flex align-items-center justify-content-center shadow-1-strong"
               style="width: 100px; height: 35px;" *ngIf="item.isNewArrival">
@@ -27,8 +27,8 @@
             </div>
 
             <div class="d-flex justify-content-between mb-3">
-              <h5 class="mb-0">{{item.name}}</h5>
-              <h5 class="text-dark mb-0">${{item.price}}</h5>
+              <h6 class="mb-0">{{item.name}}</h6>
+              <h6 class="text-dark mb-0">${{item.price}}</h6>
             </div>
 
             <div class="d-flex justify-content-between mb-2">
