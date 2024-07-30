@@ -292,12 +292,12 @@ The above copyright notice and this permission notice shall be included in all c
 
 The software is provided "As is", without warranty of any kind, express or implied, including but not limited To the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall The authors or copyright holders be liable for any claim, damages or other liability, whether in an action of Contract, tort or otherwise, arising from, out of or in connection with the software or the use or other Dealings in the software.
 --------------------------------------------------------------------------------
-Package: @angular/forms
+Package: @angular/animations
 License: "MIT"
 
 
 --------------------------------------------------------------------------------
-Package: @angular/animations
+Package: @angular/forms
 License: "MIT"
 
 
