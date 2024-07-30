@@ -14,11 +14,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { MyCartComponent } from './pages/my-cart/my-cart.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SimilarProductsComponent } from './components/similar-products/similar-products.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 
 // Importing Mdb components
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -50,12 +52,14 @@ import { ChunkPipe } from './pipe/chunk.pipe';
     HomeComponent,
     ProductComponent,
     ProductDetailsComponent,
+    MyCartComponent,
     ProfileComponent,
     ContactComponent,
     GalleryComponent,
     AboutComponent,
     SimilarProductsComponent,
-    ChunkPipe
+    ChunkPipe,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

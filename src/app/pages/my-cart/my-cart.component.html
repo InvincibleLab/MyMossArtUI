@@ -1,0 +1,48 @@
+<div class="container py-3" *ngIf="cartItems.length === 0" style="height: 450px;">
+    <div class="row">
+        <p class="h4">Your Moss Cart is empty.
+        </p>
+        <hr>
+    </div>
+</div>
+
+<div class="container py-3" *ngIf="cartItems.length > 0">
+    <div class="row">
+        <p class="h4">Shopping Cart</p>
+        <hr>
+      </div>
+
+    <div class="row">
+      <!-- Left Column: Cart Items -->
+      <div class="col-lg-7">
+        <div *ngFor="let product of products" class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-6 d-flex align-items-center justify-content-center ps-5">
+              <img src="{{ product.image }}" class="card-img" alt="{{ product.name }}">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">Price: ${{ product.price }}</p>
+                <p class="card-text">Quantity: {{ product.quantity }}</p>
+                <p class="card-text">Total: ${{ product.price * product.quantity }}</p>
+                <button class="btn btn-danger" (click)="removeFromCart(product.productId)">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Column: Total Amount and Proceed to Buy Button -->
+      <div class="col-lg-4 offset-1">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Cart Summary</h4>
+            <h5 class="card-title">Subtotal ({{ products.length }} items): ₹{{ getTotalAmount() }}</h5>
+            <button class="btn btn-success btn-block mt-3" (click)="proceedToBuy()">Proceed to Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

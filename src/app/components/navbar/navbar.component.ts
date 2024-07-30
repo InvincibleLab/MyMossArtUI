@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { FormControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { Router } from '@angular/router';
+import { ProductDetailsService } from '../../pages/product-details/product-details.service';
+
 
 interface Product {
   productId: number;
@@ -22,8 +24,10 @@ export class NavbarComponent {
   products: Product[] = [];
   filteredProducts: Product[] = [];
   showSuggestions = true; // Flag to show/hide suggestions
+  cartItemCount: number = 0;
 
-  constructor(private http: HttpClient, private router: Router) {}
+
+  constructor(private http: HttpClient, private router: Router, private productDetailsService: ProductDetailsService) {}
 
   ngOnInit(): void {
     this.loadProducts();
@@ -38,6 +42,12 @@ export class NavbarComponent {
         this.filteredProducts = [];
         this.showSuggestions = false;
       }
+    });
+
+    // cart subcription
+    console.log(" cart icon " , this.cartItemCount);
+    this.productDetailsService.mymosscart$.subscribe(mymosscart => {
+      this.cartItemCount = mymosscart.length;
     });
   }
 
